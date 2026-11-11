@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Мій розклад</title>
+  <style>
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #999; padding: 6px 10px; }
+    th { background: #eee; }
+  </style>
+</head>
+<body>
+  <h1>Мій розклад уроків</h1>
 
+  <table>
+    <caption>Розклад … класу</caption>
+    <thead>
+      <tr>
+        <th scope="col">№</th>
+        <th scope="col">Понеділок</th>
+        <th scope="col">Вівторок</th>
+        <th scope="col">Середа</th>
+        <th scope="col">Четвер</th>
+        <th scope="col">П'ятниця</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+      </tr>
+      <!-- Додай ще рядки для 2, 3, 4… уроків -->
+
+      <!-- Велика перерва на всю ширину -->
+      <tr>
+        <td colspan="6">Велика перерва</td>
+      </tr>
+
+      <!-- Подвійний урок: rowspan="2", а в наступному
+           рядку для цього дня комірку НЕ пишемо -->
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="row">Уроків</th>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <p><a href="index.html">← На головну</a></p>
+</body>
+</html>
